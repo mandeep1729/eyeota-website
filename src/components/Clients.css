@@ -1,0 +1,25 @@
+.clients-section {
+    background-color: var(--color-bg);
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.client-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: default;
+}
+
+.client-logo:hover {
+    color: var(--color-accent);
+}

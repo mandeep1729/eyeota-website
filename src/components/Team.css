@@ -1,0 +1,35 @@
+.team-section {
+    background-color: #050505;
+    text-align: center;
+}
+
+.team-image-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.team-image-container:hover .team-image {
+    filter: grayscale(0%);
+}
+
+.team-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

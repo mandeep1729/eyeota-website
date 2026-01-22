@@ -1,0 +1,77 @@
+:root {
+  --color-bg: #000000;
+  --color-accent: #19FF41;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #CCCCCC;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --padding-section: 4rem 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: var(--padding-section);
+  position: relative;
+}
+
+/* Utilities */
+.text-accent {
+  color: var(--color-accent);
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: 0 0 20px rgba(25, 255, 65, 0.4);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
