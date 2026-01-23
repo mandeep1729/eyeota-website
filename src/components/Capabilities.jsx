@@ -26,18 +26,15 @@ const Capabilities = () => {
                 <h2 className="section-title">
                     Our <span className="text-accent">Capabilities</span>
                 </h2>
-                <div className="capabilities-list">
+                <div className="capabilities-grid">
                     {capabilities.map((item, index) => (
-                        <div key={index} className="capability-item">
-                            <div className="capability-content">
-                                <div className="capability-bar"></div>
-                                <div className="capability-text">
-                                    <h3 className="capability-title">{item.title}</h3>
-                                    <p className="capability-description">{item.description}</p>
-                                </div>
-                            </div>
+                        <div key={index} className="capability-card">
                             <div className="capability-image">
                                 <img src={item.image} alt={item.title} />
+                            </div>
+                            <div className="capability-content">
+                                <h3 className="capability-title">{item.title}</h3>
+                                <p className="capability-description">{item.description}</p>
                             </div>
                         </div>
                     ))}
