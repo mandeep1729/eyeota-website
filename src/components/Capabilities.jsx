@@ -1,21 +1,24 @@
 import React from 'react';
 import './Capabilities.css';
+import computerVisionImg from '../assets/capabilities-computer-vision.avif';
+import smartAgentsImg from '../assets/capabilities-smart-agents.webp';
+import roboticsImg from '../assets/capabilities-robotics.avif';
 
 const capabilities = [
     {
         title: "Computer Vision",
         description: "We power automation with Computer Vision, and advanced ML—streamlining business processes, ensuring compliance, and detecting anomalies with precision. From workflows to digital twins, we help organizations digitalize everything for a smarter, faster future.",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
+        image: computerVisionImg
     },
     {
         title: "Smart Agents",
         description: "Our expertise in smart agents, MCP servers, and seamless LLM integrations brings intelligence into your applications—transforming both client interactions and system processes into smarter, more value-driven experiences.",
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80"
+        image: smartAgentsImg
     },
     {
         title: "Robotics",
         description: "We integrate AI with robotics and machinery—powering quadrupeds, drones, and conveyors for next-generation automation. From intelligent surveillance to smart material handling, our solutions streamline operations, boost productivity, and redefine human-machine collaboration.",
-        image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80"
+        image: roboticsImg
     }
 ];
 
