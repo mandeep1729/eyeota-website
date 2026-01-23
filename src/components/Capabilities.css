@@ -2,27 +2,60 @@
     background-color: var(--color-bg);
 }
 
-.capabilities-grid {
+.capabilities-heading {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.capabilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.capability-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 200px 1fr 300px;
     gap: 2rem;
+    align-items: center;
 }
 
-.capability-card {
-    background-color: var(--color-bg-secondary, #1a1a2e);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.capability-title-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
 }
 
-.capability-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+.capability-bar {
+    width: 4px;
+    height: 100%;
+    min-height: 50px;
+    background-color: var(--color-accent);
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+
+.capability-title {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.capability-description {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
 }
 
 .capability-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -31,37 +64,31 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
 }
 
-.capability-card:hover .capability-image img {
-    transform: scale(1.05);
-}
-
-.capability-content {
-    padding: 1.5rem;
-}
-
-.capability-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: white;
-}
-
-.capability-description {
-    font-size: 1rem;
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-    .capabilities-grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1024px) {
+    .capability-row {
+        grid-template-columns: 150px 1fr 250px;
+        gap: 1.5rem;
     }
 }
 
-@media (max-width: 600px) {
-    .capabilities-grid {
+@media (max-width: 768px) {
+    .capability-row {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .capability-title-section {
+        justify-content: center;
+    }
+
+    .capability-description {
+        text-align: center;
+    }
+
+    .capability-image {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
