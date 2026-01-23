@@ -5,14 +5,14 @@ const About = () => {
     return (
         <section id="about" className="section about-section">
             <div className="container">
-                <h2 className="section-title">About <span className="text-accent">Us</span></h2>
                 <div className="about-content">
                     <p className="about-text">
-                        At <span className="text-accent">eyeota.ai</span>, we specialize in delivering intelligent automation solutions
-                        that transform businesses. Our expertise spans across advanced robotics, computer vision,
-                        and smart agent systems, designed to optimize efficiency and drive innovation.
+                        We exist to help organizations adopt <span className="text-accent">AI</span> and transform
+                        to remain competitive and stay lean. Our expertise in computer vision, robotics, and
+                        intelligent agents enables businesses to automate complex processes and unlock new
+                        levels of efficiency.
                     </p>
-                    <button className="btn-primary">Learn More</button>
+                    <a href="#capabilities" className="about-link">Learn More →</a>
                 </div>
             </div>
         </section>

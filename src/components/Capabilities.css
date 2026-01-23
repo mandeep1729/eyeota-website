@@ -2,39 +2,90 @@
     background-color: var(--color-bg);
 }
 
-.capabilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+.capabilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
-.capability-card {
-    background: #111;
-    border: 1px solid #333;
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.3s, border-color 0.3s;
-    text-align: center;
+.capability-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 
-.capability-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-accent);
-    box-shadow: 0 5px 15px rgba(25, 255, 65, 0.1);
+.capability-item:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-.card-icon {
-    font-size: 3rem;
+.capability-content {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.capability-bar {
+    width: 4px;
+    background-color: var(--color-accent);
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+
+.capability-text {
+    flex: 1;
+}
+
+.capability-title {
+    font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-.card-title {
     color: white;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
 }
 
-.card-description {
-    color: #999;
+.capability-description {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+.capability-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.capability-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.capability-item:hover .capability-image img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+
+    .capability-item,
+    .capability-item:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .capability-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capability-bar {
+        width: 60px;
+        height: 4px;
+    }
+
+    .capability-image {
+        max-width: 100%;
+    }
 }

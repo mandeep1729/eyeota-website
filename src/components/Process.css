@@ -1,46 +1,53 @@
 .process-section {
-    background-color: #050505;
+    background-color: var(--color-bg);
 }
 
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .process-card {
-    background: #000;
+    background: #111;
     border: 1px solid #222;
-    padding: 2rem;
-    border-radius: 8px;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .process-card:hover {
     border-color: var(--color-accent);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(54, 255, 79, 0.1);
 }
 
 .process-number {
-    font-size: 4rem;
+    font-family: var(--font-heading);
+    font-size: 3rem;
     font-weight: 800;
-    color: #1a1a1a;
-    position: absolute;
-    top: -10px;
-    right: 0;
-    z-index: 1;
-}
-
-.process-card:hover .process-number {
-    color: rgba(25, 255, 65, 0.1);
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    opacity: 0.8;
 }
 
 .process-title {
-    position: relative;
-    z-index: 2;
+    font-size: 1.1rem;
     color: white;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
 }

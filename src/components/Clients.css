@@ -1,25 +1,104 @@
 .clients-section {
-    background-color: var(--color-bg);
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.clients-grid {
+.clients-container {
+    position: relative;
+    z-index: 2;
+}
+
+.clients-logos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
     align-items: center;
-    margin-top: 3rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
 }
 
 .client-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #555;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    cursor: default;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.client-logo:hover {
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover img {
+    opacity: 1;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+}
+
+.quote-mark {
+    font-size: 4rem;
     color: var(--color-accent);
+    line-height: 1;
+    font-family: Georgia, serif;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.8;
+}
+
+.testimonial-quote {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.testimonial-author strong {
+    color: white;
+    font-size: 1rem;
+}
+
+.testimonial-author span {
+    color: var(--color-accent);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .clients-logos {
+        gap: 2rem;
+    }
+
+    .client-logo {
+        width: 80px;
+    }
 }
