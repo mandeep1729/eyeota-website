@@ -17,10 +17,10 @@ const Footer = () => {
 
                     <div className="footer-contact">
                         <h4>Contact Us</h4>
-                        <p><strong>D. O'Reilly</strong></p>
-                        <p>📞 123-456-7890</p>
-                        <p>✉️ info@mysite.com</p>
-                        <p>📍 San Francisco, CA</p>
+                        <p>📞 +1 (650) 770-5158</p>
+                        <p>✉️ info@eyeota.ai</p>
+                        <p>📍 319 N Benardo St, Valley Research Park,<br />
+                           Ste A318, Mountain View, CA 94043</p>
                     </div>
 
                     <div className="footer-social">
@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2024 D. O'Reilly. All rights reserved.</p>
+                    <p>&copy; 2025 Eyeota.ai. All rights reserved.</p>
                     <div className="footer-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Accessibility Statement</a>

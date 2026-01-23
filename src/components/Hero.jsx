@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import heroVideo from '../assets/airport-construction-pharma.mp4';
 
 const Hero = () => {
     return (
@@ -23,7 +24,7 @@ const Hero = () => {
                     playsInline
                     className="hero-video"
                 >
-                    <source src="https://video.wixstatic.com/video/c837a6_c0b8ad24b7b74dc4aaf7f0e6b2c3f8c1/1080p/mp4/file.mp4" type="video/mp4" />
+                    <source src={heroVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="hero-video-overlay"></div>

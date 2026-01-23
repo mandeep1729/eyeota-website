@@ -1,12 +1,22 @@
 import React from 'react';
 import './Clients.css';
 
+import wiproLogo from '../assets/wipro-logo.png';
+import gileadLogo from '../assets/gilead-logo.png';
+import ncrLogo from '../assets/NCR-logo.png';
+import ltLogo from '../assets/LT1-logo.png';
+import jswLogo from '../assets/jsw-logo.png';
+import juulLogo from '../assets/juul-logo.svg';
+import centralPharmaLogo from '../assets/central-pharma-logo.png';
+
 const clients = [
-    { name: "Gilead", logo: "https://logo.clearbit.com/gilead.com" },
-    { name: "Wipro", logo: "https://logo.clearbit.com/wipro.com" },
-    { name: "NCR", logo: "https://logo.clearbit.com/ncr.com" },
-    { name: "Centric", logo: "https://logo.clearbit.com/centricconsulting.com" },
-    { name: "L&T Infotech", logo: "https://logo.clearbit.com/ltimindtree.com" }
+    { name: "Gilead", logo: gileadLogo },
+    { name: "Wipro", logo: wiproLogo },
+    { name: "NCR", logo: ncrLogo },
+    { name: "LTIMindtree", logo: ltLogo },
+    { name: "JSW", logo: jswLogo },
+    { name: "Juul", logo: juulLogo },
+    { name: "Central Pharma", logo: centralPharmaLogo }
 ];
 
 const testimonials = [
