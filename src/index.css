@@ -7,7 +7,7 @@
   --color-text-secondary: #AAAAAA;
   --font-heading: 'Sora', sans-serif;
   --font-main: 'Space Grotesk', sans-serif;
-  --padding-section: 5rem 2rem;
+  --padding-section: 5rem 4rem;
 }
 
 * {
@@ -49,9 +49,15 @@ h6 {
 }
 
 .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.container-narrow {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .section {
